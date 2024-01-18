@@ -110,6 +110,7 @@ nav a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 68px;
 
     
 }
@@ -286,7 +287,7 @@ input {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color );
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -342,11 +343,11 @@ input {
 
 /* Section Hebergements */
 .hebergements {
-    width: 63%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   
+    background-color: #F2F2F2;
 }
 
 .container-hebergements {
@@ -357,9 +358,9 @@ input {
     width: 100%;
     gap: 30px;
     box-sizing: border-box;
+    
+        
 }
-
-
 
 .hebergements-title{
     font-size: 22px;
@@ -371,7 +372,6 @@ input {
     margin-top: 30px;
     width: 228px;
     height: 228px;
-   
     justify-content: space-between;
     box-sizing: border-box;
    
@@ -389,7 +389,7 @@ input {
 }
 
 .hebergements-cards .card-content {
-    width: 18.533vw;
+    width: 13.30vw;;
     height: 50px;
     display: flex;  
     flex-direction: column;
@@ -590,11 +590,11 @@ input {
 }
 
 
-/* Le code ci-dessous correspond à la version responsive uniquement ( code fourni) */
+/*& Le code ci-dessous correspond à la version responsive uniquement ( code fourni) */
 
 /****** Media queries ***********/
 /*&* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     
      .populaires {
         width: 100%;
@@ -613,16 +613,37 @@ input {
         font-size: 13px;
     }
 
+    populaires section {
+        display: row;
+        flex-wrap: wrap;
+        
+        
+    }
+    header {
+        display: block;
+        
+    }
+
+    .logo img{
+        width: 61.09px;
+        height: 1.2rem;
+        padding-top: 30px; 
+        margin: 0px 0px;
+    }
 /****** Section hebergements ******/
 
     .hebergements {
         width: 100%;
+
     }
 
-    .hebergements-and-populaires {
+ 
+    
+    .hebergements section {
         flex-direction: column;
         gap: 30px;
-        
+        background-color: #F2F2F2;
+            
     }
 
     .hebergements-cards .card {
@@ -634,7 +655,7 @@ input {
     }
 
     .hebergements-cards img {
-        width: 200px;
+        width: 11.944vw;
         height: 150px;
        
     }
@@ -663,7 +684,7 @@ input {
 @media (max-width: 767.98px), (min-width: 320px) {
    
   html{
-    max-width: 768px;
+    max-width: 767.98px;
     min-height: 320px;
   }
 
