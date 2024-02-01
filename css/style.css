@@ -17,7 +17,7 @@ body {
     
     margin: 0px;
     padding:0 50px 0 50px;
-   
+
 }
 
 .main-container {
@@ -113,6 +113,10 @@ nav a:hover{
     justify-content: flex-end;
     align-items: center;
     gap: 68px;
+}
+
+.line {
+    display: none;
 }
 
 /********** RECHERCHE **********/
@@ -794,20 +798,41 @@ input {
         width: 90%;
         gap: 120px;
         justify-content: center;
+        padding-bottom: 15px;
     }
     
-    .search-form {
-        width: 290px;
-        height: 49px;
-        position: relative;
-    }
-
-    /* Passage en dessous du border-top */
+    /* Suppression hover (top) */
     nav a:hover {  
         border-top: none;
-        border-bottom: 2px solid #0065FC;
+        /**! ce hover doit apparaitre sur la ligne grise */
     }
 
+    .bottom {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .bottom::after {
+        width: 0;
+        content: "";
+        border-bottom: 2px solid #0065FC;
+        bottom: -22px;
+        position: absolute;
+        left: 0;
+    }
+
+    .bottom:hover::after {
+        width: 100%;
+    }
+
+    /* Ligne grise sous la nav */
+    .line {
+        display: block;
+        width: 100%;
+        color: 1px solid #F2F2F2;
+        margin: 5px;
+    }
+        
     .info-group section { 
         display: flex;
         flex-direction: column;
