@@ -610,32 +610,6 @@ input {
         border-top: 2px solid #0065FC;
     }
 
-    .search-submit-large input {
-        display: block;
-        font-weight: 700;
-        font-size: 18px;
-        width: 100%;
-        height: 50px;
-        color: #ffffff;
-        padding-left: 6px;
-        border: 1px solid #0065fc;
-        border-radius: 0 15px 15px 0;
-        box-sizing: border-box;
-        opacity: 0.9;
-        background: #0065fc;
-    }    
-    
-    .search-submit-large input:hover {
-        opacity: 1;
-    }
-    
-    .fa-magnifying-glass {
-        display: none;
-    }
-    
-    input {
-        outline: none;
-    }
       
 /* Section hebergements */
 
@@ -804,14 +778,13 @@ input {
     /* Suppression hover (top) */
     nav a:hover {  
         border-top: none;
-        /**! ce hover doit apparaitre sur la ligne grise */
     }
 
     .bottom {
         position: relative;
         cursor: pointer;
     }
-
+    /* Mise en place du "hover soulignement" */
     .bottom::after {
         width: 0;
         content: "";
@@ -829,7 +802,7 @@ input {
     .line {
         display: block;
         width: 100%;
-        color: 1px solid #F2F2F2;
+        color: 2px solid #F2F2F2;
         margin: 5px;
     }
         
@@ -870,14 +843,14 @@ input {
     .search-submit-large {
         border-radius: 15px;
     }
-
+    
     /* Transformation du boutton rechercher en Loupe */
     .search-submit-large input{
         display: none;
     }
-
+    
     .fa-magnifying-glass {
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -1106,7 +1079,6 @@ input {
     }
     
     .activites-cards img {
-        
         width:100%;
         height: 208px;
         object-fit: cover;
