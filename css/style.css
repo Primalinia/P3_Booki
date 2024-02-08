@@ -188,7 +188,7 @@ nav a:hover{
     opacity: 1;
 }
 
-.fa-magnifying-glass {
+#fa-magnifying-glass {
     display: none;
 }
 
@@ -610,6 +610,9 @@ input {
         border-top: 2px solid #0065FC;
     }
 
+    #fa-magnifying-glass {
+        display: none;
+    }
       
 /* Section hebergements */
 
@@ -802,7 +805,7 @@ input {
     .line {
         display: block;
         width: 100%;
-        color: 2px solid #F2F2F2;
+        color: #F2F2F2;
         margin: 5px;
     }
         
@@ -849,7 +852,7 @@ input {
         display: none;
     }
     
-    .fa-magnifying-glass {
+    #fa-magnifying-glass {
         display: block;
         align-items: center;
         justify-content: space-between;
