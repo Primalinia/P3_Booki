@@ -261,9 +261,14 @@ input {
     margin-top: 35px;
     margin-bottom: 35px; gap: 10px;
     width: 100%;
+    padding-left: 5px;
+}
+/* Centrage du i info */
+.fa-info:before {
+    display: flex;
+    justify-content: center;
 }
 
-/* Mise en place du cercle autour du  i info */
 .info-cercle {
     width: 24px;
     height: 24px;
@@ -272,7 +277,6 @@ input {
     margin-right: -10px;
     display: flex;
     justify-content: center;
-   
 }
 
 .info-icon span {
@@ -286,8 +290,7 @@ input {
 /****** Hebergements And Populaires  (code fourni) ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .hebergements-and-populaires section {
@@ -434,8 +437,6 @@ input {
     padding-top: 30px;
 }
 
-
-
 /*ACTIVITES MARSELLE */
 .activites {
     display: flex;
@@ -536,7 +537,6 @@ input {
     padding:20px 19px ;
 }
 
-
 /* SECTION FOOTER  */
 .footer {
     width:auto;
@@ -563,9 +563,7 @@ input {
     align-items: flex-start;
     padding: 20px;
     gap: 15px;
-    flex: 1 0 0;
-    
-    
+    flex: 1 0 0; 
 }
 
 .footer-title {
@@ -573,14 +571,12 @@ input {
     justify-content: space-between;
     align-items: center; 
     margin: -18.75px 0px 0px 0px;
-   
 }
 
 .footer-link{
     font-size: 16px;
     font-weight: 400;
 }
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -768,7 +764,6 @@ input {
     header {
         flex-direction: column;
         align-items: center;
-        
     }
 
     .buttons {
@@ -917,6 +912,7 @@ input {
         width: 100%;
         background-color: #FFFFFF;
     }
+
     .hebergements {
         padding: 20px;
     }
@@ -1078,7 +1074,6 @@ input {
         border: 0px;
         flex-grow: 1;
         flex-shrink: 1;
-        
     }
     
     .activites-cards img {
