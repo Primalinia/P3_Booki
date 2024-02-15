@@ -25,7 +25,7 @@ main {
     gap: 35PX;
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 1340px;
 }
 
 .main-container {
@@ -90,7 +90,7 @@ img.logo  {
     width: 61px;
     height: 19px;
     padding: 30px 0px;
-    padding-right: 1096px;
+    padding-right: 1038px;
 }
 
 buttons nav {
@@ -582,7 +582,7 @@ footer.footer  {
 /*&* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px){
       
-/* Section hebergements */
+     /* Section hebergements */
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -608,9 +608,9 @@ footer.footer  {
     footer {
         width: 100%;
     }
-/* Hebergements marseille passe au dessus de populaires */
+     /* Hebergements marseille passe au dessus de populaires */
    
-/* SECTION POPULAIRES */
+     /* SECTION POPULAIRES */
    
     .populaires {
         width: 100%;
@@ -639,7 +639,7 @@ footer.footer  {
         display: flex;   
     }
     
-    /* Section Activites */
+     /* Section Activites */
     .section-title {
         margin-top: 30px;
     }
@@ -665,7 +665,7 @@ footer.footer  {
 
     .activites-cards img {
         width:100%;
-        height: 190px;
+        height: 270px;
         flex-shrink: 0;
         align-self: stretch;    
         gap: 4px;
@@ -694,9 +694,9 @@ footer.footer  {
         flex: 1 0 0; 
     }  
 
-/* Section Footer */
+     /* Section Footer */
 
-    .footer-bloc {
+    .footer {
         width: 100%;
     }
 }
@@ -711,7 +711,7 @@ footer.footer  {
         width: 375px;
     }
 
-    /* passage du header en column*/
+     /* passage du header en column*/
     header {
         flex-direction: column;
         align-items: center;
@@ -752,7 +752,7 @@ footer.footer  {
         gap: 0;
     }
 
-    /* Suppression hover (top) */
+     /* Suppression hover (top) */
     nav a {
         border-bottom: 2px solid;
         color: #D9D9D9;
@@ -770,7 +770,7 @@ footer.footer  {
         padding-top: 0;
     }
     
-    /* Mise en place du "hover soulignement" */
+     /* Mise en place du "border soulignement" */
     .bottom::after {
         width: 0;
         content: "";
@@ -829,31 +829,29 @@ footer.footer  {
         margin: 0px;
     }
     
-    /* Barre de Recherche */
+     /* Barre de Recherche */
     .search-form {
         width: 100%;
-    }
-
-    .search-text {
-        border-right: none;
     }
 
     .search-text input,
     .search-text{
         width: 100%;
+        border-right: none;
     }
     
     .search-submit-large {
         display: none;
         
     }
-    .search-submit-large,
-    #fa-magnifying-glass i {
+    .search-submit-glass
+    #fa-magnifying-glass {
         display: block;
         width: 49px;
         height: 49px;
         color: #ffffff;
         padding: 15px 16px;
+        margin-right: 10px;
         border: 1px solid #0065fc;
         border-radius: 15px;
         box-sizing: border-box;
@@ -861,15 +859,13 @@ footer.footer  {
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
     }
 
-    /* Transformation du boutton rechercher en Loupe */
+     /* Transformation du boutton rechercher en Loupe */
     .search-submit-large input{
         display: none;
     }
-    
-    
 
-    /* Filtres */
-    /* passage de filtres en column */
+     /* Filtres */
+     /* passage de filtres en column */
     .container-filtres {
         display: flex;
         flex-direction: column;
@@ -982,8 +978,8 @@ footer.footer  {
         font-size: 18px;
     }
 
-    /* Section Populaires */
-    /* Passage de Populaires au dessus d'Hébergements */
+     /* Section Populaires */
+     /* Passage de Populaires au dessus d'Hébergements */
     .hebergements-and-populaires {
         flex-direction: column-reverse;
         gap: 15px;
@@ -1086,7 +1082,6 @@ footer.footer  {
         gap: 15px;
     }
     
-    
     .card-activites  {
         display: flex;
         align-items: center;
@@ -1103,9 +1098,7 @@ footer.footer  {
         height: 141px;
         border: 0px;
     }
-    
-    
-    
+       
     .card-content-activites {
         width: 277px;
         height: 19px;
@@ -1115,10 +1108,10 @@ footer.footer  {
         margin: 0px;
     }
     
-    /* FOOTER */
-    /* Passage en column */
+     /* FOOTER */
+     /* Passage en column */
     footer {
-        width: 100%;
+        width: 375px;
         display: flex;
         flex-direction: column;
         height: 461px;
@@ -1133,12 +1126,13 @@ footer.footer  {
     .container-footer {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 263px;
         gap: 15px;
+        padding: 0px;
+        padding-top: 30px;
+        padding-left: 30px;
     }
     
-    
-
     .footer-title {
         font-size: 18px;
     }   
