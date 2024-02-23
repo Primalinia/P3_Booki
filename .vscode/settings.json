@@ -3,5 +3,6 @@
         "editor.tabSize": 4
     },
     "editor.detectIndentation": false,
-    "svn.ignoreMissingSvnWarning": true
+    "svn.ignoreMissingSvnWarning": true,
+    "liveServer.settings.port": 5502
 }
