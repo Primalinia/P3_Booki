@@ -18,8 +18,8 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 35px;
-    width: 1440px;
-    
+    width: 100%;
+    margin-top: 0;
 }
 
 main {
@@ -31,6 +31,7 @@ main {
 .main-container {
     max-width: 1440px;
     padding: 0 50px;
+    margin: 0 auto;/* Centre le conteneur et ajoute une marge automatique des deux côtés */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -214,7 +215,7 @@ nav a:hover {
 .search-submit-large input:hover {
     opacity: 1;
 }
-.search-submit-glass
+
 #fa-magnifying-glass {
     display: none;
 }
@@ -569,16 +570,23 @@ footer.footer  {
 /*&* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px){
 
-    .header {
-        width: 90.23vw;
-        justify-content: space-between;
-
+    header {
+        width: 100%;
+        padding: 0 20px; 
+        box-sizing: border-box; /* Assure que le padding ne modifie pas la largeur totale */
     }
 
+
     .nav-container {
+        justify-content: center; /* Centrer les liens si besoin */
+        gap: 10px; /* Espacement entre les liens */
         padding: 0;
         width: 23.82vw;
+    }
 
+    .nav-container a {
+        padding: 10px;
+        flex: 1 1 auto; /* Permet aux liens de grandir mais aussi de rétrécir si nécessaire */
     }
 
     body {
@@ -710,12 +718,12 @@ footer.footer  {
     }
 
     main {
-        width: 375px;
+        width: 100%;
     }
     
      .main-container {
-        max-width:767px;
-        width: 375px;
+        min-width: 320px;
+        width: 100%;
     }
  
     .logo  {
@@ -747,13 +755,11 @@ footer.footer  {
      .bottom:hover {
         border-bottom: 2px solid;
         color: var(--main-color);
-        border-top: 0;
+        border-top: 0;  /* Inversion du border */
         padding-top: 0;
         padding-bottom: 18px;
     }
-     /* Inversion du border */
-    
-    
+     
     .main-container {
         padding: 0;
     }
@@ -768,7 +774,6 @@ footer.footer  {
         width: 375px;
         height: 438px;
         padding: 0px 20px;
-
     }
     
     .info-group {
@@ -778,8 +783,6 @@ footer.footer  {
         max-width: 100%;
         width: 375px;
         height: 438px;
-        
-
     }
 
     h1 {
@@ -813,12 +816,8 @@ footer.footer  {
         border-right: none;
     }
     
-    .search-submit-large {
-        display: none;
-        
-    }
-    .search-submit-glass
-    #fa-magnifying-glass {
+    
+     #fa-magnifying-glass {
         display: block;
         width: 49px;
         height: 49px;
@@ -833,7 +832,7 @@ footer.footer  {
     }
 
      /* Transformation du boutton rechercher en Loupe */
-    .search-submit-large input{
+    .search-submit-large {
         display: none;
     }
 
@@ -881,7 +880,7 @@ footer.footer  {
     }
     
     .info-cercle {
-        width: 31px;
+        width: 24px;
         height: 24px;
     }
 
